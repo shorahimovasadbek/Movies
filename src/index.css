@@ -1,13 +1,115 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  background-color: #032541 !important;
+  padding: 2rem 1rem;
+}
+
+.nav-item a {
+  margin: 0 0.5rem;
+  color:  white !important;
+  font-weight: 600;
+}
+
+.nav-item ul {
+  position: absolute;
+  color: black !important;
+  font-weight: 600;
+  background-color: white !important;
+  padding: 0.5rem;
+  width: 150px;
+  border-radius: 10px;
+  text-align: start;
+  opacity: 0;
+  display: none;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.nav-item:hover ul{ 
+  opacity: 1;
+  display: block;
+}
+
+
+.nav-item ul li {
+  cursor: pointer;
+  font-weight: 600;
+  background-color: white !important;
+  padding: 0.2rem;
+  list-style: none;
+  font-weight: 400;
+}
+
+select {
+  background-color: transparent !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.search_icon {
+  color: #01B4E4;
+  font-weight: bold;
+}
+
+.header{
+  background-image: url("https://i.pinimg.com/736x/20/67/3a/20673ab1055e507b51d990d3e62ffb3a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+}
+
+.opac{
+  background-color: #032541 !important;
+  z-index: 1;
+}
+
+.header_opac{
+  z-index: 3;
+  opacity: 1;
+}
+
+label {
+  height: 47px;
+  border-radius: 20px !important;
+  padding: 0 !important;
+}
+
+.search {
+  width: 92%;
+  border-radius: 20px !important;
+  height: auto;
+  border: none;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.btn_search {
+  width: 100.1px;
+  height: 49px !important;
+  border-radius: 20px !important;
+  margin-top: -2px !important;
+}
+
+.buttons{
+  border-radius: 20px;
 }
